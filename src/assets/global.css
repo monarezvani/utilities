@@ -1,7 +1,7 @@
-@import "../styles/colorPallet.module.css";
-@import "../styles/characters.module.css";
-@import "../styles/responsive.module.css";
-@import "../styles/fonts.module.css";
+@import "./colorPallet.module.css";
+@import "./characters.module.css";
+@import "./responsive.module.css";
+@import "./fonts.module.css";
 body {
   font-family: "Gotham-Book";
 }

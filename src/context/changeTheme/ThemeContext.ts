@@ -1,27 +1,11 @@
-import { Dispatch, SetStateAction, createContext } from "react";
+import { Dispatch, createContext } from "react";
+import { IAction, DefaultTheme, ITheme } from "./Enums";
 
-interface ITheme {
-  foreground: string;
-  background: string;
-}
-
-export const themes: Record<string, ITheme> = {
-  light: {
-    foreground: "#000000",
-    background: "#eeeeee",
-  },
-  dark: {
-    foreground: "#ffffff",
-    background: "#222222",
-  },
-};
-export const defaultTheme = {
-  foreground: "#000000",
-  background: "#eeeeee",
-};
-export type ContextDefaultValue = [ITheme, Dispatch<SetStateAction<ITheme>>];
-
+//when setState the [theme,setTheme] setTheme = setState(theme)
+// export type ContextDefaultValue = [ITheme, React.Dispatch<React.SetStateAction<ITheme>>];
+//when use useReducer setTheme is dispatch action
+export type ContextDefaultValue = [ITheme, Dispatch<IAction>];
 export const ThemeContext = createContext<ContextDefaultValue>([
-  defaultTheme,
+  DefaultTheme,
   () => {},
 ]);

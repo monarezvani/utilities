@@ -38,4 +38,8 @@
   --secondary: #004b44;
   --primary-600-base: #1aaeb7;
   --unnamed-color-292929: #292929;
+  --dark-foreground: #ffffff;
+  --dark-background: #222222;
+  --light-background: #ffffff;
+  --light-foreground: #333333;
 }
