@@ -1,0 +1,11 @@
+{
+  "extends": ["react-app", "react-app/jest"],
+  "settings": {
+    "testing-library/react": {
+      "version": "latest" // Replace with the version you are using
+    }
+  },
+  "env": {
+    "node": true
+  }
+}

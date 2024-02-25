@@ -1,0 +1,31 @@
+:root {
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-24: 24px;
+  --font-size-30: 30px;
+  --font-size-36: 36px;
+  --font-size-48: 48px;
+  --font-size-60: 60px;
+  --font-size-72: 72px;
+}
+@font-face {
+  font-family: "Gotham-Medium";
+  src: url("./fonts/Gotham-Medium.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url("./fonts/Gotham-Bold.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham-Book";
+  src: url("./fonts/Gotham-Book.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

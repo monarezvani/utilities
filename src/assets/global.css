@@ -1,0 +1,12 @@
+@import "../styles/colorPallet.module.css";
+@import "../styles/characters.module.css";
+@import "../styles/responsive.module.css";
+@import "../styles/fonts.module.css";
+body {
+  font-family: "Gotham-Book";
+}
+
+ul,
+li {
+  list-style: none;
+}
