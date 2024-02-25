@@ -8,6 +8,7 @@ import ReverseWords from "./components/ReverseWords";
 import { usePreventDuplicateStrings } from "./utilities/usePreventDuplicateStrings";
 import { useThemeContext } from "./context/changeTheme/useThemeContext";
 import { Themes } from "./context/changeTheme/Enums";
+import { SetInputValueInStorage } from "./components/SetInputValueInStorage";
 
 function App() {
   //arrays which contain departments
@@ -70,6 +71,7 @@ function App() {
       <FibonacciSequence />
       <h1>Reverse Word</h1>
       <ReverseWords />
+      <SetInputValueInStorage />
     </div>
   );
 }
