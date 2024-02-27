@@ -1,6 +1,6 @@
 import React, { useMemo, useReducer } from "react";
 import { ContextDefaultValue, ThemeContext } from "./ThemeContext";
-import { ACTION_TYPE, DefaultTheme, IAction, ITheme, Themes } from "./Enums";
+import { ACTION_TYPE, DefaultTheme, IAction, ITheme, Themes } from "./variable";
 
 interface ThemeContextProps {
   children: React.ReactNode;

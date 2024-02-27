@@ -7,7 +7,7 @@ import FibonacciSequence from "../components/Fibonacci/Fibonacci";
 import ReverseWords from "../components/ReverseWords";
 import { usePreventDuplicateStrings } from "../utilities/usePreventDuplicateStrings";
 import { useThemeContext } from "../context/changeTheme/useThemeContext";
-import { Themes } from "../context/changeTheme/Enums";
+import { Themes } from "../context/changeTheme/variable";
 import { SetInputValueInStorage } from "../components/SetInputValueInStorage";
 
 function App() {

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
-import { ACTION_TYPE } from "./Enums";
+import { ACTION_TYPE } from "./variable";
 
 export const useThemeContext = () => {
   const context = useContext(ThemeContext);

@@ -1,5 +1,5 @@
 import { Dispatch, createContext } from "react";
-import { IAction, DefaultTheme, ITheme } from "./Enums";
+import { IAction, DefaultTheme, ITheme } from "./variable";
 
 //when setState the [theme,setTheme] setTheme = setState(theme)
 // export type ContextDefaultValue = [ITheme, React.Dispatch<React.SetStateAction<ITheme>>];
