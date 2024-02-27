@@ -1,0 +1,56 @@
+{
+  "scoops": [
+    {
+      "name": "Mint chip",
+      "imagePath": "https://www.shutterstock.com/image-photo/chocolate-chips-vanilla-ice-cream-260nw-78542791.jpg",
+      "id": "e4e5"
+    },
+    {
+      "name": "Vanilla",
+      "imagePath": "https://www.shutterstock.com/image-illustration/raster-copy-ice-cream-scoops-260nw-1280896060.jpg",
+      "id": "5894"
+    },
+    {
+      "name": "Chocolate",
+      "imagePath": "https://www.shutterstock.com/shutterstock/photos/2290825613/display_1500/stock-photo-ice-cream-scoop-isolated-on-white-background-top-view-image-tasty-chocolate-desserts-concept-2290825613.jpg",
+      "id": "f628"
+    },
+    {
+      "name": "Salted caramel",
+      "imagePath": "https://www.thespruceeats.com/thmb/jZmYRDpWby4VM4r2w5Cah1Vth_U=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SaltedCaramelIceCreamHERO-9e49945bc9fb4afca856e37f5b1bbbe5.jpg",
+      "id": "115f"
+    }
+  ],
+  "toppings": [
+    {
+      "name": "M&Ms",
+      "imagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDBDv66vsYYM6Q3tyrtz6LHIPV3Y5j5lYtijPR2IMbZiU1YPriFIVmujla6JqGU4nlCCc&usqp=CAU",
+      "id": "3a0c"
+    },
+    {
+      "name": "Hot fudge",
+      "imagePath": "https://www.shutterstock.com/image-photo/bowl-chocolate-cream-isolated-on-600nw-1672984324.jpg",
+      "id": "8e63"
+    },
+    {
+      "name": "Peanut butter cups",
+      "imagePath": "https://www.shutterstock.com/image-photo/top-view-tasty-peanut-butter-600nw-2041252397.jpg",
+      "id": "6eb3"
+    },
+    {
+      "name": "Gummi bears",
+      "imagePath": "https://www.shutterstock.com/image-photo/bowl-gummy-candy-selective-focus-260nw-471588512.jpg",
+      "id": "12df"
+    },
+    {
+      "name": "Mochi",
+      "imagePath": "https://www.shutterstock.com/image-photo/delicious-sweet-mochi-dessert-toppings-260nw-2336054379.jpg",
+      "id": "622c"
+    },
+    {
+      "name": "Cherries",
+      "imagePath": "https://www.shutterstock.com/image-photo/close-pile-ripe-cherries-stalks-260nw-669119908.jpg",
+      "id": "cce4"
+    }
+  ]
+}

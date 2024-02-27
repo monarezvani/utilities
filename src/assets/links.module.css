@@ -32,3 +32,4 @@ allowing the background to only show through the text itself.
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* in display flex we have     gap: 2rem; between 2 elements */
