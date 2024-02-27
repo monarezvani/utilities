@@ -1,0 +1,34 @@
+/* 
+create a text effect where the background of the text is filled with an image or a gradient, rather than a solid color. Here's what each property does:
+
+background-clip: text;: 
+This property specifies the painting area of the background of an element. When set to text, it clips the background to the foreground text content, 
+allowing the background to only show through the text itself.
+
+-webkit-background-clip: text;: This is a vendor-prefixed version of the background-clip property for certain older versions of WebKit-based browsers (such as Safari).
+
+-webkit-text-fill-color: transparent;: This property sets the color of the text fill to transparent.
+ By making the text transparent, the background becomes visible through the text where background-clip is applied. */
+.link {
+  text-decoration: none;
+  color: #ddd6cb;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.link:hover,
+.link:active {
+  background: linear-gradient(90deg, #ff8a05, #f9b331);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 18px rgba(248, 190, 42, 0.8);
+}
+
+.active {
+  background: linear-gradient(90deg, #ff8a05, #f9b331);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
