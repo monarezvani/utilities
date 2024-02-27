@@ -1,14 +1,14 @@
 import React from "react";
 import "../src/assets/global.css";
 
-import { useBubbleSort } from "./utilities/useBubbleSort";
-import { useCalculateMinMaxSum } from "./utilities/useCalculateMinMaxSum";
-import FibonacciSequence from "./components/Fibonacci";
-import ReverseWords from "./components/ReverseWords";
-import { usePreventDuplicateStrings } from "./utilities/usePreventDuplicateStrings";
-import { useThemeContext } from "./context/changeTheme/useThemeContext";
-import { Themes } from "./context/changeTheme/Enums";
-import { SetInputValueInStorage } from "./components/SetInputValueInStorage";
+import { useBubbleSort } from "../utilities/useBubbleSort";
+import { useCalculateMinMaxSum } from "../utilities/useCalculateMinMaxSum";
+import FibonacciSequence from "../components/Fibonacci";
+import ReverseWords from "../components/ReverseWords";
+import { usePreventDuplicateStrings } from "../utilities/usePreventDuplicateStrings";
+import { useThemeContext } from "../context/changeTheme/useThemeContext";
+import { Themes } from "../context/changeTheme/Enums";
+import { SetInputValueInStorage } from "../components/SetInputValueInStorage";
 
 function App() {
   //arrays which contain departments
