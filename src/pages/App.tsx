@@ -3,7 +3,7 @@ import "../src/assets/global.css";
 
 import { useBubbleSort } from "../utilities/useBubbleSort";
 import { useCalculateMinMaxSum } from "../utilities/useCalculateMinMaxSum";
-import FibonacciSequence from "../components/Fibonacci";
+import FibonacciSequence from "../components/Fibonacci/Fibonacci";
 import ReverseWords from "../components/ReverseWords";
 import { usePreventDuplicateStrings } from "../utilities/usePreventDuplicateStrings";
 import { useThemeContext } from "../context/changeTheme/useThemeContext";
