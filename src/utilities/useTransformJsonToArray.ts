@@ -1,9 +1,5 @@
 import { useState } from "react";
 
-interface IFindObjectInJsonProps {
-  db: any;
-}
-
 export default function useTransformJsonToArray({ response }: any) {
   const [transformedData, setTransformedData] = useState([{}]);
   let data = response.json();
