@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { PASSWORD_REGEX } from "../../public/Enums/passwordRegex";
+import { PASSWORD_REGEX } from "../Enums/passwordRegex";
 
 export const ValidatePassword = (password: string) => {
   const [passwordError, setPasswordError] = useState<string | null>(null);

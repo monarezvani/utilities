@@ -1,4 +1,4 @@
-import { useLocalStorage } from "../utilities/useLocalStorage";
+import { useLocalStorage } from "../helpers/useLocalStorage";
 
 export const SetInputValueInStorage = () => {
   const [itemInLocalStorage, setValueInLocalStorage] = useLocalStorage(

@@ -1,16 +1,25 @@
-import React from "react";
-import "../src/assets/global.css";
+import React, { useEffect } from "react";
+// import "../src/assets/global.css";
 
 import { useBubbleSort } from "../utilities/useBubbleSort";
 import { useCalculateMinMaxSum } from "../utilities/useCalculateMinMaxSum";
 import FibonacciSequence from "../components/Fibonacci/Fibonacci";
-import ReverseWords from "../components/ReverseWords";
 import { usePreventDuplicateStrings } from "../utilities/usePreventDuplicateStrings";
 import { useThemeContext } from "../context/changeTheme/useThemeContext";
 import { Themes } from "../context/changeTheme/variable";
 import { SetInputValueInStorage } from "../components/SetInputValueInStorage";
-
+import { useFetch } from "../helpers/useFetch";
+import Spinner from "../components/spinner/Spinner";
 function App() {
+  const [{ response, isLoading, error }, doFetch] = useFetch(
+    "http://localhost:8000/scoops"
+  );
+
+  useEffect(() => {
+    doFetch();
+  }, [doFetch]);
+
+  console.log(response, "response");
   //arrays which contain departments
   const jobItems = [
     {
@@ -62,6 +71,9 @@ function App() {
       className="App"
       style={{ backgroundColor: state.background, color: state.foreground }}
     >
+      {isLoading && <Spinner />}
+      {error && error.length !== 0 && <p>{error}</p>}
+
       <header className="App-header">
         <button onClick={() => toggleTheme()}>
           {state.background === Themes.light.background ? "Dark" : "Light"}
@@ -69,8 +81,6 @@ function App() {
       </header>
       <h1>Fibonacci</h1>
       <FibonacciSequence />
-      <h1>Reverse Word</h1>
-      <ReverseWords />
       <SetInputValueInStorage />
     </div>
   );

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { USERNAME_REGEX } from "../../public/Enums/usernameRegex";
+import { USERNAME_REGEX } from "../Enums/usernameRegex";
 
 export const ValidateUsername = (username: string) => {
   const [usernameError, setUsernameError] = useState<string | null>(null);

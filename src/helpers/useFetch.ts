@@ -5,7 +5,12 @@ interface OptionType {
   method: string;
   body: undefined | number | any;
 }
-export const useFetch = (url: string) => {
+type FetchReturnType = [
+  { response: any; isLoading: boolean; error: string | null },
+  (options?: OptionType) => void
+];
+
+export const useFetch = (url: string): FetchReturnType => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<null | string>(null);
   const [response, setResponse] = useState<null | any>(null);
@@ -26,7 +31,7 @@ export const useFetch = (url: string) => {
     if (!isLoading) return;
     const getData = async () => {
       try {
-        if (Object.keys(options).length === 0) {
+        if (options.method.length === 0) {
           const res = (await axios.get(url)).data;
           setResponse(res);
         } else {

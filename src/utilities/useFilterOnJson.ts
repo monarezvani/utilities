@@ -1,45 +1,32 @@
 import { useState } from "react";
 
 interface IFindObjectInJsonProps {
-  address: string;
+  filterItem: string;
   db: any;
 }
 
 export default function useFilterOnJson({
-  address,
+  filterItem,
   db,
-}: IFindObjectInJsonProps) {
-  const [transformedData, setTransformedData] = useState([
-    { id: "", host: "", server: "" },
-  ]);
-  const [filteredDataOnAddress, setFilteredDataOnAddress] = useState({});
+  
+}: IFindObjectInJsonProps) {;
+  const [filteredData, setFilteredDataOnAddress] = useState({});
 
   const data = JSON.parse(db);
-  const transformedDataList = [];
-  //if we want to have a list of json file we use following
 
-  for (const key in data) {
-    transformedDataList.push({
-      id: key,
-      host: data[key].host,
-      server: data[key].server,
-    });
-  }
-  setTransformedData(transformedDataList);
-
-  let filteredData = {};
+  let filteredObject = {};
   //if we want to find a host that has exact address as the input
   for (const key in data) {
-    if (data.hasOwnProperty(key) && data[key] === address) {
-      filteredData = data.find(
-        (item: { address: string }) => item.address === address
+    if (data.hasOwnProperty(key) && data[key] === filterItem) {
+      filteredObject = data.find(
+        (item: { address: string }) => item.address === filterItem
       );
     }
   }
-  setFilteredDataOnAddress(filteredData);
+  setFilteredDataOnAddress(filteredObject);
 
   return {
-    transformedData,
-    filteredDataOnAddress,
+    filteredData,
+    
   };
 }
